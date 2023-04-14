@@ -1,0 +1,146 @@
+@keyframes opacity {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes bright {
+    0% {filter: brightness(100%);}
+    100% {filter: brightness(20%);}
+}
+.a {animation:opacity 1s linear;}
+.b {color: #fff;}
+/* --------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------- */
+body {}
+.tab {
+    width: 1200px;
+    display: flex;
+    flex-flow: row nowrap;}
+.tab a {
+    border: 1px solid #000;
+    width: 150px;
+    display: block;
+}
+/* --------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------- */
+.all {}
+.all .tab_contents a:hover {animation: bright 1s linear both;}
+/* .all .tab_contents a::after {content: ''; display: block;
+    position: absolute; left: 0; top: 0; z-index: 200;
+    width: 100%; height: 100%;
+    background: linear-gradient(transparent, #000);} */
+.all .tab_contents a {position: relative;}
+.all .tab_contents a div{
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999; color: #fff;
+}
+/* --------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------- */
+.all .content1 {
+    width: 1200px;
+    height: 300px;
+    display: grid;
+    grid-template-areas: 
+    "a a a b c d"
+    "a a a e f g";
+}
+.all .content1 .tab1 {
+    background: url(../images/160a1765a5ba485fddece86e4f8af406.jpg) center no-repeat;
+    background-size: cover;
+    display: block;
+    grid-area: a;
+}
+.all .content1 .tab2 {background: url(../images/05207d7b46249628798ce022f4d10b42.jpg) center no-repeat;
+    background-size: cover;
+    display: block;
+    grid-area: b;
+}
+.all .content1 .tab3 {background: url(../images/f03dc7fe67c6b45f10423a0031ac3e56.jpg) center no-repeat;
+    background-size: cover;
+    display: block;
+    grid-area: c;
+}
+.all .content1 .tab4 {background: url(../images/02725e76afedc00bcb27046d7cfee3c3.jpg) center no-repeat;
+    background-size: cover;
+    display: block;
+    grid-area: d;
+}
+.all .content1 .tab5 {background: url(../images/4ac1ff3068609d50453a367af013dfbd.jpg) center no-repeat;
+    background-size: cover;
+    display: block;
+    grid-area: e;
+}
+.all .content1 .tab6 {background: url(../images/f2a777be7f91da1e4c8e75d5f99a8d88.jpg) center no-repeat;
+    background-size: cover;
+    display: block;
+    grid-area: f;
+}
+.all .content1 .tab7 {background: url(../images/084328eb6510a5f7b773e640d67c3ba3.jpg) center no-repeat;
+    background-size: cover;
+    display: block;
+    grid-area: g;
+}
+/* --------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------- */
+
+.all .content2 {
+    width: 1200px;
+    height: 300px;
+    background: aqua;
+    display: grid;
+    grid-template-areas: 
+    "a a a b c d"
+    "a a a e f g";
+}
+.all .content2 .tab1 {
+    background: url(../images/02725e76afedc00bcb27046d7cfee3c3.jpg) center no-repeat;
+    background-size: cover;
+    display: block;
+    grid-area: a;
+}
+.all .content2 .tab1 div {}
+.all .content2 .tab1 div .p1 {}
+.all .content2 .tab1 div .p2 {}
+.all .content2 .tab2 {background: url(../images/02725e76afedc00bcb27046d7cfee3c3.jpg) center no-repeat;
+    background-size: cover;
+    display: block;
+    grid-area: b;
+}
+.all .content2 .tab3 {background: url(../images/084328eb6510a5f7b773e640d67c3ba3.jpg) center no-repeat;
+    background-size: cover;
+    display: block;
+    grid-area: c;
+}
+.all .content2 .tab4 {background: url(../images/f8003a80a45da2e674fe1e0b23378cc9.jpg) center no-repeat;
+    background-size: cover;
+    display: block;
+    grid-area: d;
+}
+.all .content2 .tab5 {background: url(../images/ec29532af0107dcaecedbc4039862884.jpg) center no-repeat;
+    background-size: cover;
+    display: block;
+    grid-area: e;
+}
+.all .content2 .tab6 {background: url(../images/0298fadbadfb559087374679a7ef7f9d.jpg
+    ) center no-repeat;
+    background-size: cover;
+    display: block;
+    grid-area: f;
+}
+.all .content2 .tab7 {background: url(../images/02725e76afedc00bcb27046d7cfee3c3.jpg) center no-repeat;
+    background-size: cover;
+    display: block;
+    grid-area: g;
+}
