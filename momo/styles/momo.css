@@ -15,6 +15,7 @@
 /* --------------------------------------------------------------------------- */
 body {}
 .tab {
+    margin-top: 30px;
     width: 1200px;
     display: flex;
     flex-flow: row nowrap;}
@@ -23,22 +24,40 @@ body {}
     width: 150px;
     display: block;
 }
+.tab .active {
+    background:#fff; color:red; position:relative;
+}
+.tab .active::before {
+    content:''; display:block;
+            background:#000; height:5px; width:100%;
+            position:absolute; top:-5px;
+}
 /* --------------------------------------------------------------------------- */
 /* --------------------------------------------------------------------------- */
 /* --------------------------------------------------------------------------- */
 /* --------------------------------------------------------------------------- */
 /* --------------------------------------------------------------------------- */
 .all {}
-.all .tab_contents a:hover {animation: bright 1s linear both;}
+/* .all .tab_contents a:hover {animation: bright 1s linear both;} */
 /* .all .tab_contents a::after {content: ''; display: block;
     position: absolute; left: 0; top: 0; z-index: 200;
     width: 100%; height: 100%;
     background: linear-gradient(transparent, #000);} */
-.all .tab_contents a {position: relative;}
-.all .tab_contents a div{
+/* .all .tab_contents a {position: relative;} */
+/* .all .tab_contents a div{
     position: absolute; top: 50%; left: 50%;
     transform: translate(-50%, -50%);
     z-index: 999; color: #fff;
+} */
+.all .tab_contents a div {
+    width: 100%;  height: 100%;
+}
+.all .tab_contents a div p {
+    background: rgba(0,0,0,0.6);
+    width: 100%; height: 100%;
+    text-align: center;
+    color: #fff;
+    padding-top: 23%;
 }
 /* --------------------------------------------------------------------------- */
 /* --------------------------------------------------------------------------- */
@@ -50,8 +69,10 @@ body {}
     height: 300px;
     display: grid;
     grid-template-areas: 
-    "a a a b c d"
-    "a a a e f g";
+    "a b c d"
+    "a e f g";
+    grid-template-columns: 600px repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
 .all .content1 .tab1 {
     background: url(../images/160a1765a5ba485fddece86e4f8af406.jpg) center no-repeat;
